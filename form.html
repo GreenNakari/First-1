@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+</head>
+<body>
+    <header>
+            <a id="logo" href="index.html"> <span class="pink">САЙТ</span> <i>ВИЗИТКА</i></a>
+    </header>
+    <nav id="mainnav">
+            <ul>
+                <li class="active"><a href="uslugi.html">Услуги</a></li>
+                <li class="active"><a href="oh_nas.html">О нас</a></li>
+                <li class="active"><a href="customers.html">Клиенты</a></li>
+                <li class="active"><a href="contacts.html">Контакты</a></li>
+            </ul>
+    </nav>
+    <form id="contact-form">
+        <div class="form_item"><br>
+        <label for="topic">Тема</label><br>
+        <select name="topic" id="topic">
+            <option>Заказать услугу</option>
+            <option>Оставить отзыв/замечание</option>
+            <option>Предложить сотрудничество</option>
+            <option>Другое</option>
+        </select> <br>
+        <label for="name">Имя</label><br>
+        <input name="name" id="name" type="text" placeholder="Имя" required><br>
+        <label for="name">E-mail</label><br>
+        <input name="email" id="email" type="email" placeholder="E-mail" required><br>
+        <label for="birthdate">Дата рождения</label><br>
+        <input type="date" id="birthdate" name="birthdate" required><br>
+        <label>Телефон</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label>Файл</label><br>
+        <input type="file"><br>
+        <label for="name">Текст сообщения</label><br>
+        <textarea id="message" name="message" placeholder="Текст сообщения"></textarea><br>
+        <button type="submit">Отправить</button>
+        </div>
+    </form>
+</body>
+</html>
